@@ -1,42 +1,81 @@
+Codepen: https://codepen.io/bharukimiller/pen/OJXgrRo?editors=1100
 Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes. 
 
     1. What is Semantic HTML? 
+        Semantic HTML is a way of coding that structures your content, as well as it makes it more accessible
     2. What is HTML used for? 
+        HTML is used for websites and web applications. It is the content of the internet
     3. What is an attribute and where do we put it? 
+        An attribute is part of an HTML element, which provides more information about the given element. We put it after the opening tag, and they can be in any order.
     4. What is the h1 tag used for? How many times should I use it on a page?
+        The h1 tag is used to highlight the most important element on the page. It will be used like the title of an essay, and you should only use it once.
     5. Name two tags that have required attributes
+        The img has the required attribute of src, the source of the picture to displayed. The anchor tag has a required attribute of href, the link url or portion of the page in which you will redirected to upon clicking the link.
     6. What do we put in the head of our HTML document? 
+        We put data that will not go into the body of the HTML document, such as metadata. It is where title, scripts, character set, etc will be placed
     7. What is an id? 
+        An id is a unique identifier for an HTML element. Similar to a class, but should only be used once, is identified by #, and usually is used to anchor section/element to the page to allow navigation in a page
     8. What elements can I add an id to? 
+        You can add an id to any element, but usually for elements you want to navigate to in page.
     9. How many times can I use the same id on a page? 
+        Any amount, but good practice is once.
     10. What is a class? 
+        A class is another identifier for an HTML element. Can be used as many times as necessary, and you can add multiples classes on a single tag.
     11. What elements can I add a class to? 
+        You can add any elements to a class, but usually only ones you want to have grouped together should have the same class
     12. How many times can I use the same class on a page? 
+        As many times as you'd like/need. It is intended for use on multiple elements
     13. How do I get my link to open in a new tab?
+        using the attribute target="_blank"
     14. What is the alt attribute in the image tag used for? 
+        The alt attribute is to show text instead of the image when the image cannot load onto the page, for whatever reason. It also helps screen readers read what the image content is
     15. How do I reference an id?
+        Using #idname
     16. What is the difference between a section and a div
+        A section is semantic HTML. It usually sections off portions of the HTML document, helping structure the HTML. A div is better used a container for content, given you want to manipulate said container with CSS. 
     17. What is CSS used for? 
+        Cascading Style Sheets are used to style the webpage.
     18. How to we select an element? Example - every h2 on the page
+            h2 {}
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        A class is used on multiple elements (Ex: You have 4 pictures side by side, so you need to limit how much space they take so you use the class to style them the same). An id is used on a single element, and can be used to navigate the page (your navbar has a bunch of <a> tags, one referring to the about id like <a href="#about">About</a>)
     20. How do we select classes in CSS?
+        We select classes in CSS using the . identifier like 
+        .element {}
     21. How do we select a p element with a single class of “human””?
+        p .human{}
     22. What is a parent child selector? When would this be useful? 
+        The parent child selector is placed between two CSS selectors, and the elements matched by the second selector are the direct children matched by the first. This is useful to use on something like a list and list items, since the list items are direct children of the list, but you can style all of the list items without identify each of them by a class. However, a parent child selector will not style the list items of the children, given the one of children has a list
     23. How do you select all links within a div with the class of sidebar?
+        div.sidebar > links {}
     24. What is a pseudo selector?
+        It is a selector used when the user does something specific to an element, like when they hover over a specific element. It is usually defined by :.
     25. What do we use the change the spacing between lines?
+        line-height
     26. What do we use to change the spacing between letters?
+        letter-spacing
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        text-transform: uppercase | lowercase | capitalize
     28. How do I add a 1px border around my div that is dotted and black?
+        border: 1px dotted black
     29. How do I select everything on the page? 
+        * {} styles everything on the page
     30. How do I write a comment in CSS?
+        /* single line comment */
     31. How do I find out what file I am in, when I am using the command line? 
+        pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls, can use -a or -ls to see more info
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        rm, this permanently deletes the file
     34. Why should I use version control? 
+        It is much easier to work with collaborators. If there is a working prototype, but someone needs to work on the navbar, they can fork the prototype version and mess with the website until the navbar is working. In the meantime, someone else can work on the page content and neither are getting in the others way.
     35. How often should I commit to github?
+        About every 20 minutes, just in case.
     36. What is the command we would use to push our repo up to github? 
+        git push
     37. Walk me through Lambda's git flow. 
+        Lambda's git flow starts with forking Lambda's repo. My name would be in front of the / for the project at this point, and my forked branch would be in my github repo. I would then clone the repo, using the HTTPS link. Going to the terminal, I would cd to where I want to clone the forked repo, then use git clone <repolinkgoeshere>. I then cd into the cloned repo. I would use git checkout -b 'firstName lastName' so I have a branch that is easily identifable that it is me. I now can work on the repo. To add and commit changes, I use git add . to add all the changes and prep this for a commit, then I use git commit -m "message" to have a commit that accurately reflects the work that has changed. To push these changes to my github repo, I use git push -u origin branch-name, the same branch-name I used when creating the branch. I then go to my github repo and make sure the base repository is my forked repo. Then it should be all done! Use https://www.notion.so/GitFlow-step-by-step-a764163309754e23b1b9c4077b1653cc as reference to make sure it is done correctly :).
 
 Stretch Questions
 
